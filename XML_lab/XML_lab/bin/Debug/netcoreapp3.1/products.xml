@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<products>
+  <product>
+    <id>1</id>
+    <name>рисовая крупа</name>
+    <calories>330</calories>
+  </product>
+  <product>
+    <id>2</id>
+    <name>чернослив</name>
+    <calories>240</calories>
+  </product>
+  <product>
+    <id>3</id>
+    <name>сахар</name>
+    <calories>387</calories>
+  </product>
+  <product>
+    <id>4</id>
+    <name>масло сливочное</name>
+    <calories>717</calories>
+  </product>
+  <product>
+    <id>5</id>
+    <name>тыква</name>
+    <calories>26</calories>
+  </product>
+  <product>
+    <id>6</id>
+    <name>маргарин</name>
+    <calories>717</calories>
+  </product>
+  <product>
+    <id>7</id>
+    <name>манная крупа</name>
+    <calories>360</calories>
+  </product>
+  <product>
+    <id>9</id>
+    <name>свекла</name>
+    <calories>43</calories>
+  </product>
+  <product>
+    <id>10</id>
+    <name>капуста</name>
+    <calories>25</calories>
+  </product>
+  <product>
+    <id>11</id>
+    <name>морковь</name>
+    <calories>32</calories>
+  </product>
+  <product>
+    <id>12</id>
+    <name>петрушка </name>
+    <calories>36</calories>
+  </product>
+  <product>
+    <id>13</id>
+    <name>лук репчатый</name>
+    <calories>40</calories>
+  </product>
+  <product>
+    <id>14</id>
+    <name>томатная паста</name>
+    <calories>82</calories>
+  </product>
+  <product>
+    <id>15</id>
+    <name>бульон мясной</name>
+    <calories>6</calories>
+  </product>
+  <product>
+    <id>16</id>
+    <name>курица</name>
+    <calories>170</calories>
+  </product>
+  <product>
+    <id>17</id>
+    <name>макаронные изделия</name>
+    <calories>131</calories>
+  </product>
+  <product>
+    <id>18</id>
+    <name>соль</name>
+    <calories>0</calories>
+  </product>
+  <product>
+    <id>19</id>
+    <name>говядина</name>
+    <calories>250</calories>
+  </product>
+  <product>
+    <id>20</id>
+    <name>шпик свиной</name>
+    <calories>871</calories>
+  </product>
+  <product>
+    <id>21</id>
+    <name>свинина</name>
+    <calories>146</calories>
+  </product>
+  <product>
+    <id>22</id>
+    <name>картофель</name>
+    <calories>77</calories>
+  </product>
+  <product>
+    <id>23</id>
+    <name>черемша</name>
+    <calories>35</calories>
+  </product>
+  <product>
+    <id>24</id>
+    <name>мука</name>
+    <calories>364</calories>
+  </product>
+  <product>
+    <id>25</id>
+    <name>яйцо куриное</name>
+    <calories>155</calories>
+  </product>
+  <product>
+    <id>26</id>
+    <name>молоко коровье</name>
+    <calories>62</calories>
+  </product>
+  <product>
+    <id>27</id>
+    <name>ванилин</name>
+    <calories>288</calories>
+  </product>
+</products>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu>
+  <menuDish>
+    <id>2</id>
+    <dishId>2</dishId>
+    <price>200</price>
+    <date>22.01.2020 00:00:00</date>
+  </menuDish>
+  <menuDish>
+    <id>3</id>
+    <dishId>3</dishId>
+    <price>250</price>
+    <date>10.02.2020 00:00:00</date>
+  </menuDish>
+  <menuDish>
+    <id>4</id>
+    <dishId>4</dishId>
+    <price>150</price>
+    <date>03.02.2020 00:00:00</date>
+  </menuDish>
+  <menuDish>
+    <id>5</id>
+    <dishId>5</dishId>
+    <price>300</price>
+    <date>01.03.2020 00:00:00</date>
+  </menuDish>
+  <menuDish>
+    <id>6</id>
+    <dishId>6</dishId>
+    <price>200</price>
+    <date>01.01.2020 00:00:00</date>
+  </menuDish>
+  <menuDish>
+    <id>7</id>
+    <dishId>7</dishId>
+    <price>100</price>
+    <date>01.01.2020 00:00:00</date>
+  </menuDish>
+  <menuDish>
+    <id>8</id>
+    <dishId>8</dishId>
+    <price>500</price>
+    <date>05.01.2020 00:00:00</date>
+  </menuDish>
+</menu>

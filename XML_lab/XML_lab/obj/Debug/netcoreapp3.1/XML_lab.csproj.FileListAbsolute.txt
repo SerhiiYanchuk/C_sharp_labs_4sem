@@ -1,0 +1,11 @@
+E:\VS\c#labs\XML_lab\XML_lab\bin\Debug\netcoreapp3.1\XML_lab.exe
+E:\VS\c#labs\XML_lab\XML_lab\bin\Debug\netcoreapp3.1\XML_lab.deps.json
+E:\VS\c#labs\XML_lab\XML_lab\bin\Debug\netcoreapp3.1\XML_lab.runtimeconfig.json
+E:\VS\c#labs\XML_lab\XML_lab\bin\Debug\netcoreapp3.1\XML_lab.runtimeconfig.dev.json
+E:\VS\c#labs\XML_lab\XML_lab\bin\Debug\netcoreapp3.1\XML_lab.dll
+E:\VS\c#labs\XML_lab\XML_lab\bin\Debug\netcoreapp3.1\XML_lab.pdb
+E:\VS\c#labs\XML_lab\XML_lab\obj\Debug\netcoreapp3.1\XML_lab.csprojAssemblyReference.cache
+E:\VS\c#labs\XML_lab\XML_lab\obj\Debug\netcoreapp3.1\XML_lab.AssemblyInfoInputs.cache
+E:\VS\c#labs\XML_lab\XML_lab\obj\Debug\netcoreapp3.1\XML_lab.AssemblyInfo.cs
+E:\VS\c#labs\XML_lab\XML_lab\obj\Debug\netcoreapp3.1\XML_lab.dll
+E:\VS\c#labs\XML_lab\XML_lab\obj\Debug\netcoreapp3.1\XML_lab.pdb

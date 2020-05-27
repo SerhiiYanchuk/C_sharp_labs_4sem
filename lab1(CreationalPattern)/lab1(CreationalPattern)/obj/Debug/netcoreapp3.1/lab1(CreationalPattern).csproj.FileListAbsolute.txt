@@ -1,0 +1,11 @@
+E:\VS\c#labs\lab1(CreationalPattern)\lab1(CreationalPattern)\bin\Debug\netcoreapp3.1\lab1(CreationalPattern).exe
+E:\VS\c#labs\lab1(CreationalPattern)\lab1(CreationalPattern)\bin\Debug\netcoreapp3.1\lab1(CreationalPattern).deps.json
+E:\VS\c#labs\lab1(CreationalPattern)\lab1(CreationalPattern)\bin\Debug\netcoreapp3.1\lab1(CreationalPattern).runtimeconfig.json
+E:\VS\c#labs\lab1(CreationalPattern)\lab1(CreationalPattern)\bin\Debug\netcoreapp3.1\lab1(CreationalPattern).runtimeconfig.dev.json
+E:\VS\c#labs\lab1(CreationalPattern)\lab1(CreationalPattern)\bin\Debug\netcoreapp3.1\lab1(CreationalPattern).dll
+E:\VS\c#labs\lab1(CreationalPattern)\lab1(CreationalPattern)\bin\Debug\netcoreapp3.1\lab1(CreationalPattern).pdb
+E:\VS\c#labs\lab1(CreationalPattern)\lab1(CreationalPattern)\obj\Debug\netcoreapp3.1\lab1(CreationalPattern).csprojAssemblyReference.cache
+E:\VS\c#labs\lab1(CreationalPattern)\lab1(CreationalPattern)\obj\Debug\netcoreapp3.1\lab1(CreationalPattern).AssemblyInfoInputs.cache
+E:\VS\c#labs\lab1(CreationalPattern)\lab1(CreationalPattern)\obj\Debug\netcoreapp3.1\lab1(CreationalPattern).AssemblyInfo.cs
+E:\VS\c#labs\lab1(CreationalPattern)\lab1(CreationalPattern)\obj\Debug\netcoreapp3.1\lab1(CreationalPattern).dll
+E:\VS\c#labs\lab1(CreationalPattern)\lab1(CreationalPattern)\obj\Debug\netcoreapp3.1\lab1(CreationalPattern).pdb

@@ -1,0 +1,11 @@
+C:\Users\SerhiiYanchuk\source\repos\lab3(BehavioralPatterns)\lab3(BehavioralPatterns)\obj\Debug\netcoreapp3.1\lab3(BehavioralPatterns).csprojAssemblyReference.cache
+C:\Users\SerhiiYanchuk\source\repos\lab3(BehavioralPatterns)\lab3(BehavioralPatterns)\obj\Debug\netcoreapp3.1\lab3(BehavioralPatterns).AssemblyInfoInputs.cache
+C:\Users\SerhiiYanchuk\source\repos\lab3(BehavioralPatterns)\lab3(BehavioralPatterns)\obj\Debug\netcoreapp3.1\lab3(BehavioralPatterns).AssemblyInfo.cs
+C:\Users\SerhiiYanchuk\source\repos\lab3(BehavioralPatterns)\lab3(BehavioralPatterns)\bin\Debug\netcoreapp3.1\lab3(BehavioralPatterns).exe
+C:\Users\SerhiiYanchuk\source\repos\lab3(BehavioralPatterns)\lab3(BehavioralPatterns)\bin\Debug\netcoreapp3.1\lab3(BehavioralPatterns).deps.json
+C:\Users\SerhiiYanchuk\source\repos\lab3(BehavioralPatterns)\lab3(BehavioralPatterns)\bin\Debug\netcoreapp3.1\lab3(BehavioralPatterns).runtimeconfig.json
+C:\Users\SerhiiYanchuk\source\repos\lab3(BehavioralPatterns)\lab3(BehavioralPatterns)\bin\Debug\netcoreapp3.1\lab3(BehavioralPatterns).runtimeconfig.dev.json
+C:\Users\SerhiiYanchuk\source\repos\lab3(BehavioralPatterns)\lab3(BehavioralPatterns)\bin\Debug\netcoreapp3.1\lab3(BehavioralPatterns).dll
+C:\Users\SerhiiYanchuk\source\repos\lab3(BehavioralPatterns)\lab3(BehavioralPatterns)\bin\Debug\netcoreapp3.1\lab3(BehavioralPatterns).pdb
+C:\Users\SerhiiYanchuk\source\repos\lab3(BehavioralPatterns)\lab3(BehavioralPatterns)\obj\Debug\netcoreapp3.1\lab3(BehavioralPatterns).dll
+C:\Users\SerhiiYanchuk\source\repos\lab3(BehavioralPatterns)\lab3(BehavioralPatterns)\obj\Debug\netcoreapp3.1\lab3(BehavioralPatterns).pdb

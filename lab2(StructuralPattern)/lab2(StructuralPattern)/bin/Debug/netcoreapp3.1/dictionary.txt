@@ -1,0 +1,4 @@
+file файл
+something щось
+name  назва
+green зелений

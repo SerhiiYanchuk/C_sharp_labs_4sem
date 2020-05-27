@@ -1,0 +1,11 @@
+E:\VS\c#labs\lab2(StructuralPattern)\lab2(StructuralPattern)\obj\Debug\netcoreapp3.1\lab2(StructuralPattern).csprojAssemblyReference.cache
+E:\VS\c#labs\lab2(StructuralPattern)\lab2(StructuralPattern)\obj\Debug\netcoreapp3.1\lab2(StructuralPattern).AssemblyInfoInputs.cache
+E:\VS\c#labs\lab2(StructuralPattern)\lab2(StructuralPattern)\obj\Debug\netcoreapp3.1\lab2(StructuralPattern).AssemblyInfo.cs
+E:\VS\c#labs\lab2(StructuralPattern)\lab2(StructuralPattern)\bin\Debug\netcoreapp3.1\lab2(StructuralPattern).exe
+E:\VS\c#labs\lab2(StructuralPattern)\lab2(StructuralPattern)\bin\Debug\netcoreapp3.1\lab2(StructuralPattern).deps.json
+E:\VS\c#labs\lab2(StructuralPattern)\lab2(StructuralPattern)\bin\Debug\netcoreapp3.1\lab2(StructuralPattern).runtimeconfig.json
+E:\VS\c#labs\lab2(StructuralPattern)\lab2(StructuralPattern)\bin\Debug\netcoreapp3.1\lab2(StructuralPattern).runtimeconfig.dev.json
+E:\VS\c#labs\lab2(StructuralPattern)\lab2(StructuralPattern)\bin\Debug\netcoreapp3.1\lab2(StructuralPattern).dll
+E:\VS\c#labs\lab2(StructuralPattern)\lab2(StructuralPattern)\bin\Debug\netcoreapp3.1\lab2(StructuralPattern).pdb
+E:\VS\c#labs\lab2(StructuralPattern)\lab2(StructuralPattern)\obj\Debug\netcoreapp3.1\lab2(StructuralPattern).dll
+E:\VS\c#labs\lab2(StructuralPattern)\lab2(StructuralPattern)\obj\Debug\netcoreapp3.1\lab2(StructuralPattern).pdb
