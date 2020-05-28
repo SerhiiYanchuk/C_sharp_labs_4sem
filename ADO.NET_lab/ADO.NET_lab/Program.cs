@@ -91,19 +91,19 @@ namespace ADO.NET_lab
                             break;
                         case 4:
                             #region 4. Вывести торговые точки и название товаров, которые продаются
-                            sqlExpression = "SELECT cStores.StoreAddress, P1.ProductName, P2.ProductName, P3.ProductName, P4.ProductName, P5.ProductName, " +
-                                   "P6.ProductName, P7.ProductName, P8.ProductName, P9.ProductName, P10.ProductName " +
-                                   "FROM cStores " +
-                                    "LEFT JOIN cProducts AS P1 ON cStores.Product1 = P1.ProductId " +
-                                    "LEFT JOIN cProducts AS P2 ON cStores.Product2 = P2.ProductId " +
-                                    "LEFT JOIN cProducts AS P3 ON cStores.Product3 = P3.ProductId " +
-                                    "LEFT JOIN cProducts AS P4 ON cStores.Product4 = P4.ProductId " +
-                                    "LEFT JOIN cProducts AS P5 ON cStores.Product5 = P5.ProductId " +
-                                    "LEFT JOIN cProducts AS P6 ON cStores.Product6 = P6.ProductId " +
-                                    "LEFT JOIN cProducts AS P7 ON cStores.Product7 = P7.ProductId " +
-                                    "LEFT JOIN cProducts AS P8 ON cStores.Product8 = P8.ProductId " +
-                                    "LEFT JOIN cProducts AS P9 ON cStores.Product9 = P9.ProductId " +
-                                    "LEFT JOIN cProducts AS P10 ON cStores.Product10 = P10.ProductId;";
+                            sqlExpression = @"SELECT cStores.StoreAddress, P1.ProductName, P2.ProductName, P3.ProductName, P4.ProductName, P5.ProductName, 
+                                                       P6.ProductName, P7.ProductName, P8.ProductName, P9.ProductName, P10.ProductName
+                                                       FROM cStores
+                                                LEFT JOIN cProducts AS P1 ON cStores.Product1 = P1.ProductId
+                                                LEFT JOIN cProducts AS P2 ON cStores.Product2 = P2.ProductId
+                                                LEFT JOIN cProducts AS P3 ON cStores.Product3 = P3.ProductId
+                                                LEFT JOIN cProducts AS P4 ON cStores.Product4 = P4.ProductId
+                                                LEFT JOIN cProducts AS P5 ON cStores.Product5 = P5.ProductId
+                                                LEFT JOIN cProducts AS P6 ON cStores.Product6 = P6.ProductId
+                                                LEFT JOIN cProducts AS P7 ON cStores.Product7 = P7.ProductId
+                                                LEFT JOIN cProducts AS P8 ON cStores.Product8 = P8.ProductId
+                                                LEFT JOIN cProducts AS P9 ON cStores.Product9 = P9.ProductId
+                                                LEFT JOIN cProducts AS P10 ON cStores.Product10 = P10.ProductId;";
                             SqlCommand command4 = new SqlCommand(sqlExpression, connection);
                             SqlDataReader reader4 = command4.ExecuteReader();
 
@@ -124,8 +124,8 @@ namespace ADO.NET_lab
                             break;
                         case 5:
                             #region 5. Вывести самые дорогие товары 
-                            sqlExpression = "SELECT ProductName, ProductPrice FROM cProducts " +
-                                               "WHERE ProductPrice = (SELECT MAX(ProductPrice) FROM cProducts); ";
+                            sqlExpression = @"SELECT ProductName, ProductPrice FROM cProducts
+                                                WHERE ProductPrice = (SELECT MAX(ProductPrice) FROM cProducts); ";
                             SqlCommand command5 = new SqlCommand(sqlExpression, connection);
                             SqlDataReader reader5 = command5.ExecuteReader();
 
@@ -143,10 +143,10 @@ namespace ADO.NET_lab
                             break;
                         case 6:
                             #region 6. Вывести количество проданых товаров по каждому виду в общем
-                            sqlExpression = "SELECT cProducts.ProductName, SUM(vSelling.Quantity) AS Quantity " +
-                                                "FROM vSelling " +
-                                                "INNER JOIN cProducts ON vSelling.ProductId = cProducts.ProductId " +
-                                                "GROUP BY cProducts.ProductName;";
+                            sqlExpression = @"SELECT cProducts.ProductName, SUM(vSelling.Quantity) AS Quantity
+                                                FROM vSelling
+                                                INNER JOIN cProducts ON vSelling.ProductId = cProducts.ProductId
+                                                GROUP BY cProducts.ProductName; ";
                             SqlCommand command6 = new SqlCommand(sqlExpression, connection);
                             SqlDataReader reader6 = command6.ExecuteReader();
 
@@ -164,12 +164,12 @@ namespace ADO.NET_lab
                             break;
                         case 7:
                             #region 7. Вывести самые популярные товары
-                            sqlExpression = "SELECT cProducts.ProductName, SUM(vSelling.Quantity) AS Quantity " +
-                                            "FROM vSelling " +
-                                            "INNER JOIN cProducts ON vSelling.ProductId = cProducts.ProductId " +
-                                            "GROUP BY cProducts.ProductName " +
-                                            "HAVING SUM(vSelling.Quantity) = " +
-                                                "(SELECT MAX(S) FROM(SELECT SUM(vSelling.Quantity) AS S FROM vSelling GROUP BY vSelling.ProductId) AS M);";
+                            sqlExpression = @"SELECT cProducts.ProductName, SUM(vSelling.Quantity) AS Quantity 
+                                                FROM vSelling
+                                                INNER JOIN cProducts ON vSelling.ProductId = cProducts.ProductId
+                                                GROUP BY cProducts.ProductName
+                                                HAVING SUM(vSelling.Quantity) =
+                                                    (SELECT MAX(S) FROM(SELECT SUM(vSelling.Quantity) AS S FROM vSelling GROUP BY vSelling.ProductId) AS M); ";
                             SqlCommand command7 = new SqlCommand(sqlExpression, connection);
                             SqlDataReader reader7 = command7.ExecuteReader();
 
@@ -187,11 +187,11 @@ namespace ADO.NET_lab
                             break;
                         case 8:
                             #region 8. Посчитать заработок каждой торговой точки
-                            sqlExpression = "SELECT cStores.StoreAddress, SUM(vSelling.Quantity*cProducts.ProductPrice) AS '$' FROM vSelling " +
-                                            "INNER JOIN cProducts ON vSelling.ProductId = cProducts.ProductId " +
-                                            "INNER JOIN cStores ON vSelling.StoreId = cStores.StoreId " +
-                                            "GROUP BY cStores.StoreAddress " +
-                                            "ORDER BY '$' DESC;";
+                            sqlExpression = @"SELECT cStores.StoreAddress, SUM(vSelling.Quantity*cProducts.ProductPrice) AS '$' FROM vSelling
+                                                INNER JOIN cProducts ON vSelling.ProductId = cProducts.ProductId
+                                                INNER JOIN cStores ON vSelling.StoreId = cStores.StoreId
+                                                GROUP BY cStores.StoreAddress
+                                                ORDER BY '$' DESC; ";
                             SqlCommand command8 = new SqlCommand(sqlExpression, connection);
                             SqlDataReader reader8 = command8.ExecuteReader();
 
@@ -209,10 +209,10 @@ namespace ADO.NET_lab
                             break;
                         case 9:
                             #region 9. Выбрать торг точки, где можно купить рубашку, костюм, брюки
-                            sqlExpression = "SELECT StoreAddress FROM cStores " +
-                                             "WHERE 1 IN(Product1, Product2, Product3, Product4, Product5, Product6, Product7, Product8, Product9, Product10) AND " +
-                                                  "2 IN(Product1, Product2, Product3, Product4, Product5, Product6, Product7, Product8, Product9, Product10) AND " +
-                                                  "3 IN(Product1, Product2, Product3, Product4, Product5, Product6, Product7, Product8, Product9, Product10);";
+                            sqlExpression = @"SELECT StoreAddress FROM cStores
+                                            WHERE 1 IN(Product1, Product2, Product3, Product4, Product5, Product6, Product7, Product8, Product9, Product10) AND
+                                                  2 IN(Product1, Product2, Product3, Product4, Product5, Product6, Product7, Product8, Product9, Product10) AND
+                                                  3 IN(Product1, Product2, Product3, Product4, Product5, Product6, Product7, Product8, Product9, Product10); ";
                             SqlCommand command9 = new SqlCommand(sqlExpression, connection);
                             SqlDataReader reader9 = command9.ExecuteReader();
 
@@ -230,19 +230,19 @@ namespace ADO.NET_lab
                             break;
                         case 10:
                             #region 10. Вывести торг точки и количество проданого товара
-                            sqlExpression = "SELECT cStores.StoreAddress, ISNULL(V1.Quantity, 0), ISNULL(V2.Quantity, 0), ISNULL(V3.Quantity, 0), ISNULL(V4.Quantity, 0), ISNULL(V5.Quantity, 0), " +
-                                               "ISNULL(V6.Quantity, 0), ISNULL(V7.Quantity, 0), ISNULL(V8.Quantity, 0), ISNULL(V9.Quantity, 0), ISNULL(V10.Quantity, 0) " +
-                                               "FROM cStores " +
-                                        "LEFT JOIN vSelling AS V1 ON cStores.Product1 = V1.ProductId AND cStores.StoreId = V1.StoreId " +
-                                        "LEFT JOIN vSelling AS V2 ON cStores.Product2 = V2.ProductId AND cStores.StoreId = V2.StoreId " +
-                                        "LEFT JOIN vSelling AS V3 ON cStores.Product3 = V3.ProductId AND cStores.StoreId = V3.StoreId " +
-                                        "LEFT JOIN vSelling AS V4 ON cStores.Product4 = V4.ProductId AND cStores.StoreId = V4.StoreId " +
-                                        "LEFT JOIN vSelling AS V5 ON cStores.Product5 = V5.ProductId AND cStores.StoreId = V5.StoreId " +
-                                        "LEFT JOIN vSelling AS V6 ON cStores.Product6 = V6.ProductId AND cStores.StoreId = V6.StoreId " +
-                                        "LEFT JOIN vSelling AS V7 ON cStores.Product7 = V7.ProductId AND cStores.StoreId = V7.StoreId " +
-                                        "LEFT JOIN vSelling AS V8 ON cStores.Product8 = V8.ProductId AND cStores.StoreId = V8.StoreId " +
-                                        "LEFT JOIN vSelling AS V9 ON cStores.Product9 = V9.ProductId AND cStores.StoreId = V9.StoreId " +
-                                        "LEFT JOIN vSelling AS V10 ON cStores.Product10 = V10.ProductId AND cStores.StoreId = V10.StoreId; ";
+                            sqlExpression = @"SELECT cStores.StoreAddress, ISNULL(V1.Quantity, 0), ISNULL(V2.Quantity, 0), ISNULL(V3.Quantity, 0), ISNULL(V4.Quantity, 0), ISNULL(V5.Quantity, 0), 
+                                                   ISNULL(V6.Quantity, 0), ISNULL(V7.Quantity, 0), ISNULL(V8.Quantity, 0), ISNULL(V9.Quantity, 0), ISNULL(V10.Quantity, 0)
+                                                   FROM cStores
+                                            LEFT JOIN vSelling AS V1 ON cStores.Product1 = V1.ProductId AND cStores.StoreId = V1.StoreId
+                                            LEFT JOIN vSelling AS V2 ON cStores.Product2 = V2.ProductId AND cStores.StoreId = V2.StoreId
+                                            LEFT JOIN vSelling AS V3 ON cStores.Product3 = V3.ProductId AND cStores.StoreId = V3.StoreId
+                                            LEFT JOIN vSelling AS V4 ON cStores.Product4 = V4.ProductId AND cStores.StoreId = V4.StoreId
+                                            LEFT JOIN vSelling AS V5 ON cStores.Product5 = V5.ProductId AND cStores.StoreId = V5.StoreId
+                                            LEFT JOIN vSelling AS V6 ON cStores.Product6 = V6.ProductId AND cStores.StoreId = V6.StoreId
+                                            LEFT JOIN vSelling AS V7 ON cStores.Product7 = V7.ProductId AND cStores.StoreId = V7.StoreId
+                                            LEFT JOIN vSelling AS V8 ON cStores.Product8 = V8.ProductId AND cStores.StoreId = V8.StoreId
+                                            LEFT JOIN vSelling AS V9 ON cStores.Product9 = V9.ProductId AND cStores.StoreId = V9.StoreId
+                                            LEFT JOIN vSelling AS V10 ON cStores.Product10 = V10.ProductId AND cStores.StoreId = V10.StoreId; ";
                             SqlCommand command10 = new SqlCommand(sqlExpression, connection);
                             SqlDataReader reader10 = command10.ExecuteReader();
 
